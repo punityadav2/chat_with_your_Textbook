@@ -63,7 +63,7 @@ def get_retrieval_chain(groq_api_key, vector_store):
     Creates and returns a retrieval chain for question answering.
     """
     # Initialize the Groq LLM
-    llm = ChatGroq(groq_api_key=groq_api_key, model_name="")
+    llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
 
     # Create a retriever from the vector store
     retriever = vector_store.as_retriever()
